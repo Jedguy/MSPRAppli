@@ -1,16 +1,10 @@
 # flutter_apptest
 
-A new Flutter application.
+Application flutter créé pour la mspr appli et développement.
 
-## Getting Started
+## Résumé
+L'application permet par le widget "WebView" de se connecter au site créé pour afficher une liste de salarié.
 
-This project is a starting point for a Flutter application.
+## Détail
+Vu que l'url de notre machine pour charger notre site n'est pas fixe, l'url sera changé et personnalisé par nos soins.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
