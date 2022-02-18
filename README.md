@@ -1,4 +1,4 @@
-# flutter_apptest
+# MSPRAppli
 
 Application flutter créé pour la mspr appli et développement.
 
