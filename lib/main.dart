@@ -1,6 +1,10 @@
-import 'dart:io';                            // Add this import.
+import 'dart:async';                                    // Add this import
+
 import 'package:flutter/material.dart';
-import 'package:webview_flutter/webview_flutter.dart';
+import 'package:webview_flutter/webview_flutter.dart';  // Add this import back
+
+import 'src/navigation_controls.dart';                  // Add this import
+import 'src/web_view_stack.dart';
 
 void main() {
   runApp(
@@ -18,25 +22,20 @@ class WebViewApp extends StatefulWidget {
 }
 
 class _WebViewAppState extends State<WebViewApp> {
-  // Add from here ...
-  @override
-  void initState() {
-    if (Platform.isAndroid) {
-      WebView.platform = SurfaceAndroidWebView();
-    }
-    super.initState();
-  }
-  // ... to here.
+  final controller = Completer<WebViewController>();    // Instantiate the controller
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Flutter WebView'),
+        title: const Text('MSPR DEV APPLI'),
+        // Add from here ...
+        actions: [
+          NavigationControls(controller: controller),
+        ],
+        // ... to here.
       ),
-      body: const WebView(
-        initialUrl: 'https://louen-peschard.github.io/louen-peschard/home.html',
-      ),
+      body: WebViewStack(controller: controller),       // Add the controller argument
     );
   }
 }
