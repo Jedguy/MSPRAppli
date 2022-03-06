@@ -1,16 +1,16 @@
-# webview_apptest
+# MSPRAppli
+Application flutter créé pour la mspr appli et développement.
 
-A new Flutter project.
+## Résumé
+L'application permet par le widget "WebView" de se connecter au site créé pour afficher une liste de salarié.
 
-## Getting Started
+Le fichier main.dart renvoi simplement une page de notre application avec un titre.
 
-This project is a starting point for a Flutter application.
+Le fichier web_view_stack va récupérer l'url et va se connecter pour récupérer une image de notre site web.
 
-A few resources to get you started if this is your first Flutter project:
+Le dernier fichier, navigation_controls permet une option de naviagtion et de reload de l'application.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Détail
+Vu que l'url de notre machine pour charger notre site n'est pas fixe, l'url sera changé et personnalisé par nos soins.
+
