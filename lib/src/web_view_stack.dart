@@ -19,7 +19,7 @@ class _WebViewStackState extends State<WebViewStack> {
     return Stack(
       children: [
         WebView(
-          initialUrl: 'https://flutter.dev',
+          initialUrl: 'https://127.0.0.1',
           // Add from here ...
           onWebViewCreated: (webViewController) {
             widget.controller.complete(webViewController);
